@@ -55,6 +55,9 @@ define([
                     this.$('.complete-nudge .triangle').css('margin-left', margin - this.$('.complete-nudge .triangle').outerWidth()/2);
                 }
             }
+                 if (Adapt.course.get("_isComplete")) {
+            this.setVisible(false);
+        }
         },
 
         setMode:function(mode) {
